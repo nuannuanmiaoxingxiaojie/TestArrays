@@ -4,8 +4,8 @@
  */
 public class Math99 {
     public static void main(String[] args) {
-        int x = 0;
-        int y = 0;
+        int x;
+        int y;
         for (x = 0; x <= 9; x++) {
             for (y = 1; y <= x; y++) {
                 System.out.print(x + "*" + y + "=" + x * y + " ");
