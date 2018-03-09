@@ -6,9 +6,9 @@ import java.util.Scanner;
  */
 public class HuiSquare {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Please enter n:");
-        int n = sc.nextInt();
+        System.out.println("请输入n ");
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
         printJZ(n);
     }
 
@@ -30,8 +30,6 @@ public class HuiSquare {
             for (i = n - k - 1, j = k; i > k; i--) {//第四条边
                 A[i][j] = t++;
             }
-
-
         }
         if (n % 2 == 1) {
             A[n / 2][n / 2] = t;
